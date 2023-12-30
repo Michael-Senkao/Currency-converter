@@ -18,7 +18,7 @@ app.get("/", (req, res) => {
 app.post("/convert", async (req, res) => {
   try {
     const response = await axios.get(
-      `https://v6.exchangerate-api.com/v6/process.env.KEY/pair/${req.body.base}/${req.body.target}/${req.body.amount}`
+      `https://v6.exchangerate-api.com/v6/${apiKey}/pair/${req.body.base}/${req.body.target}/${req.body.amount}`
     );
     const result = {
       amount: req.body.amount,
