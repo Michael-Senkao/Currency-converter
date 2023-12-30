@@ -6,7 +6,7 @@ import dtenv from "dotenv";
 dtenv.config();
 const app = express();
 const port = process.env.port || 3000;
-const apiKey = process.env.key;
+const apiKey = process.env.KEY;
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
 
