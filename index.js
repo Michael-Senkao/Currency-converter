@@ -4,7 +4,6 @@ import axios from "axios";
 
 const app = express();
 const port = process.env.port || 3000;
-const apiKey = process.env.key;
 
 app.use(express.static("public"));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -17,7 +16,7 @@ app.get("/", (req, res) => {
 app.post("/convert", async (req, res) => {
   try{
     const response = await axios.get(
-      `https://v6.exchangerate-api.com/v6/${apiKey}/pair/${req.body.base}/${req.body.target}/${req.body.amount}`
+      `https://v6.exchangerate-api.com/v6/859f1b5c70a45272682c96b0/pair/${req.body.base}/${req.body.target}/${req.body.amount}`
     );
     console.log(response.data);
     const result = {
