@@ -11,3 +11,7 @@ This is a simple currency converter application built with Node.js, Express, and
 ### Prerequisites
 - Node.js and npm installed on your machine.
 - An API key from [ExchangeRate-API](https://www.exchangerate-api.com/).
+
+### Screenshots
+
+<img src="public/Screenshot 2024-07-07 004521.png" />
